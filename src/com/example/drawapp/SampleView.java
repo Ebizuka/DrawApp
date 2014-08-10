@@ -3,6 +3,7 @@ package com.example.drawapp;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.view.View;
 
 public class SampleView extends View {
@@ -14,7 +15,8 @@ public class SampleView extends View {
 	}
 	@Override
 	public void onDraw(Canvas canvas){
-		canvas.drawText("Hello", 100, 100, paint);
+		
+		canvas.drawCircle(500, 500, 20, paint);
 		
 	}
 }
